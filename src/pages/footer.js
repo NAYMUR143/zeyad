@@ -102,7 +102,7 @@ const footer = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={4} md={3}>
-            <ul class="media-contact">
+            <ul className="media-contact">
               <li>
                 <a href="#" className="dynamic-bracket">
                   INSTAGRAM
@@ -121,7 +121,7 @@ const footer = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={4} md={3}>
-            <ul class="digital-contact">
+            <ul className="digital-contact">
               <li>
                 <a href="#" className="dynamic-bracket">
                   APP STORE
