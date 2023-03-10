@@ -14,11 +14,13 @@ const FooterDiv = styled.div`
       position: absolute;
       content: "[";
       left: -5px;
+      bottom: 0;
     }
 
     :hover::after {
       position: absolute;
       content: "]";
+      bottom: 0;
     }
   }
 
@@ -27,11 +29,11 @@ const FooterDiv = styled.div`
 
     li {
       list-style: none;
-      margin: 10px 0;
+      margin: 8px 0;
 
       a {
         font-weight: 500;
-        font-size: 0.9rem;
+        font-size: 0.75rem;
         cursor: pointer;
         text-transform: uppercase;
       }
@@ -49,6 +51,9 @@ const FooterDiv = styled.div`
       }
 
       .submit-btn {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        font-weight: 500;
         position: absolute;
         right: 4px;
         top: 4px;
@@ -61,8 +66,8 @@ const footer = () => {
   return (
     <FooterDiv>
       <div className="contact-container">
-        <Grid container spacing={1.25}>
-          <Grid item xs={3}>
+        <Grid container spacing={1.3}>
+          <Grid item xs={12} sm={4} md={3}>
             <ul className="normal-contact">
               <li>
                 <a href="#" className="dynamic-bracket">
@@ -96,7 +101,7 @@ const footer = () => {
               </li>
             </ul>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={12} sm={4} md={3}>
             <ul class="media-contact">
               <li>
                 <a href="#" className="dynamic-bracket">
@@ -115,7 +120,7 @@ const footer = () => {
               </li>
             </ul>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={12} sm={4} md={3}>
             <ul class="digital-contact">
               <li>
                 <a href="#" className="dynamic-bracket">
@@ -129,7 +134,7 @@ const footer = () => {
               </li>
             </ul>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={12} sm={12} md={3}>
             <div className="news-letter-container">
               <input type="text" placeholder="SUBSCRIBE TO NEWSLETTER" />
               <a href="#" className="dynamic-bracket submit-btn">

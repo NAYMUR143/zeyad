@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import Image from "next/image";
 let ImgInfoContainer = styled.div`
   width: 100%;
   position: relative;
@@ -6,12 +7,13 @@ let ImgInfoContainer = styled.div`
 
   img {
     width: 100%;
+    height: auto;
   }
 
   p,
   li {
     text-transform: uppercase;
-    font-size: 0.88rem;
+    font-size: 0.75rem;
     font-weight: 500;
   }
 
@@ -71,7 +73,7 @@ const PrintOneImgBox = ({ obj }) => {
   return (
     <ImgInfoContainer>
       <div className="relative">
-        <img src={onLoadImg} alt="" />
+        <Image src={onLoadImg} alt="img" width={1200} height={1200} />
         <div className="dynamic-img-title-container">
           <p className="title">{onLoadTitle}</p>
           <ul className="sub-ul">
@@ -81,7 +83,7 @@ const PrintOneImgBox = ({ obj }) => {
       </div>
 
       <div className="absolute">
-        <img src={hoverImg} alt="" />
+        <Image src={hoverImg} alt="img" width={1200} height={1200} />
         <div className="dynamic-img-title-container">
           <p className="title">quick add</p>
           <ul className="sub-ul">

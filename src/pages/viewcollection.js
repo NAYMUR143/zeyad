@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import PrintOneImgBox from "./collections/all/PrintOneImgBox";
 import { data } from "./data";
 import { Grid } from "@mui/material";
+import { Box } from "@mui/system";
 
 const CatalogContentDivForViewCollection = styled.div`
   width: 100%;
@@ -13,7 +14,7 @@ const CatalogContentDivForViewCollection = styled.div`
   h4 {
     position: relative;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     cursor: pointer;
     text-transform: uppercase;
 
@@ -49,7 +50,7 @@ const CatalogContentDivForViewCollection = styled.div`
   }
 
   .top-div {
-    padding: 20px 10px 10px 10px;
+    padding: 20px 10px 0px 10px;
     display: flex;
     justify-content: space-between;
   }
@@ -65,7 +66,7 @@ const CatalogContentDivForViewCollection = styled.div`
 
     li {
       margin-top: unset;
-      margin-right: 12px;
+      margin-right: 16px;
     }
   }
 
@@ -82,9 +83,9 @@ const ViewCollection = () => {
       <div className="top-div">
         <Grid
           container
-          spacing={1.25}
+          spacing={1.3}
           style={{
-            padding: "10px",
+            padding: "0 10px",
           }}
         >
           <Grid item xs={3}>
@@ -93,9 +94,18 @@ const ViewCollection = () => {
             </div>
           </Grid>
           <Grid item xs={3}>
-            <div>
-              <h4>NEW ARRIVALS</h4>
-            </div>
+            <Box
+              sx={{
+                display: {
+                  sm: "none",
+                  md: "inherit",
+                },
+              }}
+            >
+              <div>
+                <h4>NEW ARRIVALS</h4>
+              </div>
+            </Box>
           </Grid>
           <Grid item xs={6}>
             <div>
@@ -110,7 +120,7 @@ const ViewCollection = () => {
       <div className="img-arr-container">
         <Grid
           container
-          spacing={1.25}
+          spacing={1.3}
           style={{
             padding: "10px",
           }}
@@ -118,7 +128,7 @@ const ViewCollection = () => {
           {imgDataArr.map((obj, i) => {
             if (i < 12) {
               return (
-                <Grid item xs={3} key={i}>
+                <Grid item sm={6} md={3} key={i}>
                   <div className="single-img-container">
                     <PrintOneImgBox obj={obj} />
                   </div>

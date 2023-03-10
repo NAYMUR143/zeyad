@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
@@ -16,10 +17,10 @@ const HeaderDiv = styled.div`
 
   border-bottom: 1px solid #ededed;
 
-  h4 {
+  a {
     position: relative;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     cursor: pointer;
     text-transform: uppercase;
 
@@ -42,7 +43,7 @@ const HeaderDiv = styled.div`
     display: flex;
 
     .catalog-container {
-      width: 48%;
+      width: 48.75%;
       display: flex;
       align-items: center;
     }
@@ -65,13 +66,7 @@ const Header = () => {
     <HeaderDiv>
       <div className="header-container">
         <div className="catalog-container">
-          <h4
-            onClick={() => {
-              router.push("/collections/all");
-            }}
-          >
-            catalog
-          </h4>
+          <Link href="/collections/all">catalog</Link>
         </div>
 
         <div>

@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import PrintOneImgBox from "./PrintOneImgBox";
 import { data } from "../../data";
 import { Grid } from "@mui/material";
+import { Box, display } from "@mui/system";
 
 const CatalogContentDiv = styled.div`
   width: 100%;
@@ -9,7 +10,7 @@ const CatalogContentDiv = styled.div`
   h4 {
     position: relative;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     cursor: pointer;
     text-transform: uppercase;
 
@@ -61,34 +62,77 @@ const CatalogContent = () => {
   return (
     <CatalogContentDiv>
       <div className="top-div">
+        <Box
+          sx={{
+            display: {
+              xs: "none",
+              sm: "none",
+              md: "inherit",
+            },
+          }}
+        >
+          <div>
+            <h4>
+              home <span>{">"}</span> all
+            </h4>
+          </div>
+        </Box>
+
         <div>
-          <h4>
-            home <span>{">"}</span> all
-          </h4>
+          <h4 className="dynamic-bracket">FILTER</h4>
         </div>
+
         <div>
-          <h4 className="dynamic-bracket">filter</h4>
+          <Box
+            sx={{
+              display: {
+                xs: "none",
+                sm: "none",
+                md: "inherit",
+              },
+            }}
+          >
+            <h4>
+              4 <span className="fixed-bracket">6</span>
+            </h4>
+          </Box>
+          <Box
+            sx={{
+              display: {
+                sm: "inherit",
+                md: "none",
+              },
+            }}
+          >
+            2 <span className="fixed-bracket">3</span>
+          </Box>
         </div>
+
         <div>
-          <h4>
-            4 <span className="fixed-bracket">6</span>
-          </h4>
-        </div>
-        <div>
-          <h4 className="dynamic-bracket">need help?</h4>
+          <Box
+            sx={{
+              display: {
+                xs: "none",
+                sm: "none",
+                md: "inherit",
+              },
+            }}
+          >
+            <h4 className="dynamic-bracket">need help?</h4>
+          </Box>
         </div>
       </div>
 
       <div className="img-arr-container">
         <Grid
           container
-          spacing={1.25}
+          spacing={1.3}
           style={{
             padding: "10px",
           }}
         >
           {imgDataArr.map((obj, i) => (
-            <Grid item xs={2} key={i}>
+            <Grid item sm={4} md={2} key={i}>
               <div className="single-img-container">
                 <PrintOneImgBox obj={obj} />
               </div>
