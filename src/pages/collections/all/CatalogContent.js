@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 import PrintOneImgBox from "./PrintOneImgBox";
+import { data } from "../../data";
+import { Grid } from "@mui/material";
 
 const CatalogContentDiv = styled.div`
   width: 100%;
@@ -43,22 +45,18 @@ const CatalogContentDiv = styled.div`
   }
 
   .top-div {
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .img-arr-container {
+    width: 100%;
   }
 `;
 
 const CatalogContent = () => {
-  let obj = {
-    onLoadImg:
-      "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/47d433f4-6fa7-42e4-9a8f-18dc7618f492/",
-    hoverImg:
-      "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
-    onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
-    onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
-  };
+  let imgDataArr = data();
 
   return (
     <CatalogContentDiv>
@@ -81,8 +79,22 @@ const CatalogContent = () => {
         </div>
       </div>
 
-      <div>
-        <PrintOneImgBox obj={obj} />
+      <div className="img-arr-container">
+        <Grid
+          container
+          spacing={1.25}
+          style={{
+            padding: "10px",
+          }}
+        >
+          {imgDataArr.map((obj, i) => (
+            <Grid item xs={2} key={i}>
+              <div className="single-img-container">
+                <PrintOneImgBox obj={obj} />
+              </div>
+            </Grid>
+          ))}
+        </Grid>
       </div>
     </CatalogContentDiv>
   );

@@ -25,6 +25,11 @@ a {
   text-decoration: none;
 }
 
+::placeholder {
+  font-weight: 600;
+  font-size: 0.76rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

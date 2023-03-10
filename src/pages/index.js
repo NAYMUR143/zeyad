@@ -1,6 +1,11 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import Header from "./header";
+import Footer from "./footer";
+import CookieFooter from "./cookiefooter";
+import ViewCollection from "./viewcollection";
+import StickyCollection from "./stickycollection";
+import RelatedViewCollection from "./relatedviewcollection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +21,12 @@ export default function Home() {
       <main className={inter.className}>
         <Header />
       </main>
+
+      <ViewCollection />
+      <StickyCollection />
+      <RelatedViewCollection />
+      <Footer />
+      <CookieFooter />
     </>
   );
 }
