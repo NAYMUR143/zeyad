@@ -133,7 +133,7 @@ const ViewCollection = () => {
               if (i < 12) {
                 return (
                   <Grid item sm={6} md={3} key={i}>
-                    <Link href={`/customize/${obj.customize}`}>
+                    <Link href={`/product/${obj.customize}`}>
                       <div className="single-img-container">
                         <PrintOneImgBox obj={obj} />
                       </div>
