@@ -6,7 +6,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -15,7 +15,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -24,7 +24,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -33,7 +33,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -42,7 +42,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -51,7 +51,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -60,7 +60,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -69,7 +69,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -78,7 +78,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -87,7 +87,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -96,7 +96,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -105,7 +105,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -114,7 +114,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -123,7 +123,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -132,7 +132,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -141,7 +141,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -150,7 +150,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -159,7 +159,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -168,7 +168,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -177,7 +177,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -186,7 +186,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -195,7 +195,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -204,7 +204,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -213,7 +213,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
 
   {
@@ -223,7 +223,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -232,7 +232,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -241,7 +241,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -250,7 +250,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -259,7 +259,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -268,7 +268,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -277,7 +277,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -286,7 +286,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -295,7 +295,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -304,7 +304,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -313,7 +313,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -322,7 +322,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -331,7 +331,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -340,7 +340,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -349,7 +349,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -358,7 +358,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -367,7 +367,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -376,7 +376,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -385,7 +385,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -394,7 +394,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -403,7 +403,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -412,7 +412,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -421,7 +421,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
   {
     onLoadImg:
@@ -430,7 +430,7 @@ let data = [
       "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2d10c2d5-e293-48e2-8a22-4407b5045bf9/",
     onLoadTitle: "CHENILLE BUBBLE OWL HOODIE",
     onLoadSubTitles: "৳18300",
-    hoverSubTitles: ["xx", "s", "m", "l"],
+    hoverSubTitles: ["s", "m", "l"],
   },
 ];
 

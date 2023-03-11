@@ -1,13 +1,15 @@
 import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
-import Image from "next/image";
+import { useEffect, useState } from "react";
+import PrintOneImgBox from "./PrintOneImgBox";
 
 const AfterHeaderDiv = styled.div`
   width: 100%;
 
   .img-container {
-    padding: 10px;
+    width: 100%;
+    padding: 10px 0;
   }
 
   p {
@@ -50,65 +52,52 @@ const AfterHeaderDiv = styled.div`
 `;
 
 const AfterHeader = () => {
+  let [imgDataArr, setImgDataArr] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      let res = await fetch("/api/home/heroData");
+      let data = await res.json();
+
+      setImgDataArr(data);
+    })();
+  }, []);
   return (
     <AfterHeaderDiv>
       <div className="img-container">
-        <Grid container spacing={1.3}>
-          <Grid item xs={12}></Grid>
-          <Grid item xs={12}>
-            <Box
-              sx={{
-                display: {
-                  xs: "none",
-                  sm: "none",
-                  md: "flex",
-                },
-                flexDirection: "column",
-                alignItems: "center",
-              }}
-            >
-              <picture>
-                <Image
-                  style={{ width: "auto", maxHeight: "70vh" }}
-                  src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1920/https://f.shgcdn.com/58a6a6ab-0318-485a-86ac-4f90131d1ce2/"
-                  alt="img"
-                  width={1200}
-                  height={1200}
-                />
-              </picture>
-            </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Grid
+            container
+            spacing={1.3}
+            style={{
+              width: "100%",
+            }}
+          >
+            <Grid item sm={6} md={3}></Grid>
 
-            <Box
-              sx={{
-                display: {
-                  xs: "flex",
-                  sm: "flex",
-                  md: "none",
-                },
-                flexDirection: "column",
-                alignItems: "center",
-              }}
-            >
-              <picture>
-                <Image
-                  style={{ width: "100%", height: "auto" }}
-                  src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1920/https://f.shgcdn.com/58a6a6ab-0318-485a-86ac-4f90131d1ce2/"
-                  alt="img"
-                  width={1200}
-                  height={1200}
-                />
-              </picture>
-            </Box>
+            {imgDataArr &&
+              imgDataArr.map((obj, i) => (
+                <Grid item sm={6} md={3} key={i}>
+                  <div className="single-img-container">
+                    <PrintOneImgBox obj={obj} />
+                  </div>
+                </Grid>
+              ))}
+
+            <Grid item sm={6} md={3}></Grid>
           </Grid>
+        </Box>
 
-          <Grid item xs={12}></Grid>
-          <Grid item xs={12}></Grid>
-          <Grid item xs={12}></Grid>
-          <Grid item xs={12}></Grid>
-          <Grid item xs={12}></Grid>
-
+        <Grid container spacing={1.3}>
           <Grid item xs={12}>
-            <p className="dynamic-bracket">LONDON (40ºF)</p>
+            <p className="dynamic-bracket" style={{ padding: "10px" }}>
+              Atlanta (24ºc)
+            </p>
           </Grid>
 
           <Grid item xs={12}></Grid>

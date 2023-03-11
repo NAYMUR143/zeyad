@@ -7,7 +7,9 @@ let ImgInfoContainer = styled.div`
 
   img {
     width: 100%;
-    height: auto;
+    height: 250px;
+
+    object-fit: cover;
   }
 
   p,
@@ -67,8 +69,7 @@ let ImgInfoContainer = styled.div`
 `;
 
 const PrintOneImgBox = ({ obj }) => {
-  let { onLoadImg, hoverImg, onLoadTitle, onLoadSubTitles, hoverSubTitles } =
-    obj;
+  let { onLoadImg, onLoadTitle, onLoadSubTitles, hoverSubTitles } = obj;
 
   return (
     <ImgInfoContainer>
@@ -83,7 +84,7 @@ const PrintOneImgBox = ({ obj }) => {
       </div>
 
       <div className="absolute">
-        <Image src={hoverImg} alt="img" width={1200} height={1200} />
+        <Image src={onLoadImg} alt="img" width={1200} height={1200} />
         <div className="dynamic-img-title-container">
           <p className="title">quick add</p>
           <ul className="sub-ul">

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import PrintOneImgBox from "../../components/collections/PrintOneImgBox";
+import PrintOneImgBox from "../collections/PrintOneImgBox";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import { useEffect, useState } from "react";
@@ -80,7 +80,7 @@ const ViewCollection = () => {
 
   useEffect(() => {
     (async () => {
-      let res = await fetch("/api/collections/data");
+      let res = await fetch("/api/home/topData");
       let data = await res.json();
 
       setImgDataArr(data);
@@ -99,7 +99,7 @@ const ViewCollection = () => {
         >
           <Grid item xs={3}>
             <div>
-              <h4>OVO® 2023</h4>
+              <h4>24k 2023</h4>
             </div>
           </Grid>
           <Grid item xs={3}>
@@ -115,13 +115,6 @@ const ViewCollection = () => {
                 <h4>NEW ARRIVALS</h4>
               </div>
             </Box>
-          </Grid>
-          <Grid item xs={6}>
-            <div>
-              <h4 className="view-collection-txt">
-                <span className="dynamic-bracket">VIEW COLLECTION</span>
-              </h4>
-            </div>
           </Grid>
         </Grid>
       </div>

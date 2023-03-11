@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -16,7 +17,15 @@ const HeaderDiv = styled.div`
   justify-content: center;
 
   border-bottom: 1px solid #ededed;
-
+  .logo {
+    width: 100px;
+    height: 50px;
+    img {
+      width: 100%;
+      object-fit: contain;
+      height: 100%;
+    }
+  }
   a {
     position: relative;
     font-weight: 500;
@@ -42,8 +51,9 @@ const HeaderDiv = styled.div`
     width: 100%;
     display: flex;
 
+    justify-content: space-between;
+
     .catalog-container {
-      width: 48.75%;
       display: flex;
       align-items: center;
     }
@@ -51,6 +61,23 @@ const HeaderDiv = styled.div`
 
   img {
     cursor: pointer;
+  }
+
+  .dynamic-bracket {
+    position: relative;
+
+    :hover::before {
+      position: absolute;
+      content: "[";
+      left: -5px;
+      bottom: 0;
+    }
+
+    :hover::after {
+      position: absolute;
+      content: "]";
+      bottom: 0;
+    }
   }
 `;
 
@@ -66,17 +93,28 @@ const Header = () => {
     <HeaderDiv>
       <div className="header-container">
         <div className="catalog-container">
-          <Link href="/collections/all">catalog</Link>
+          <Link href="/collections/all">24k catalog</Link>
         </div>
 
-        <div>
-          <img
-            onClick={() => {
-              router.push("/");
+        <div
+          className="logo"
+          onClick={() => {
+            router.push("/");
+          }}
+        >
+          <img src="/img/logo.png" alt="main-logo" />
+        </div>
+
+        <div className="catalog-container">
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
             }}
-            src="/img/svg/owl.svg"
-            alt="main-logo"
-          />
+            className="dynamic-bracket"
+          >
+            BAG
+          </a>
         </div>
       </div>
     </HeaderDiv>

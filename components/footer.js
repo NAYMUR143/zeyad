@@ -4,7 +4,6 @@ import { Grid } from "@mui/material";
 const FooterDiv = styled.div`
   width: 100%;
   border-top: 1px solid #ededed;
-  padding-bottom: 120px;
   margin-top: 50px;
 
   .dynamic-bracket {
@@ -30,13 +29,6 @@ const FooterDiv = styled.div`
     li {
       list-style: none;
       margin: 8px 0;
-
-      a {
-        font-weight: 500;
-        font-size: 0.75rem;
-        cursor: pointer;
-        text-transform: uppercase;
-      }
     }
 
     .news-letter-container {
@@ -59,6 +51,14 @@ const FooterDiv = styled.div`
         top: 4px;
       }
     }
+  }
+
+  p,
+  a {
+    font-weight: 500;
+    font-size: 0.75rem;
+    cursor: pointer;
+    text-transform: uppercase;
   }
 `;
 
@@ -86,11 +86,6 @@ const footer = () => {
               </li>
               <li>
                 <a href="#" className="dynamic-bracket">
-                  SHIPPING
-                </a>
-              </li>
-              <li>
-                <a href="#" className="dynamic-bracket">
                   TERMS {"&"} CONDITIONS
                 </a>
               </li>
@@ -108,32 +103,9 @@ const footer = () => {
                   INSTAGRAM
                 </a>
               </li>
-              <li>
-                <a href="#" className="dynamic-bracket">
-                  TWITTER
-                </a>
-              </li>
-              <li>
-                <a href="#" className="dynamic-bracket">
-                  FACEBOOK
-                </a>
-              </li>
             </ul>
           </Grid>
-          <Grid item xs={12} sm={4} md={3}>
-            <ul className="digital-contact">
-              <li>
-                <a href="#" className="dynamic-bracket">
-                  APP STORE
-                </a>
-              </li>
-              <li>
-                <a href="#" className="dynamic-bracket">
-                  GOOGLE PLAY
-                </a>
-              </li>
-            </ul>
-          </Grid>
+          <Grid item xs={12} sm={4} md={3}></Grid>
           <Grid item xs={12} sm={12} md={3}>
             <div className="news-letter-container">
               <input type="text" placeholder="SUBSCRIBE TO NEWSLETTER" />
@@ -141,6 +113,25 @@ const footer = () => {
                 Submit
               </a>
             </div>
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={1.3}>
+          <Grid item xs={12}></Grid>
+          <Grid item xs={12}></Grid>
+          <Grid item xs={12}></Grid>
+          <Grid item xs={12}></Grid>
+          <Grid item xs={12}></Grid>
+          <Grid item xs={12}></Grid>
+          <Grid item xs={12}></Grid>
+          <Grid item xs={12}></Grid>
+
+          <Grid item xs={12} sm={6}>
+            <p>COUNTRY: USA</p>
+          </Grid>
+
+          <Grid item xs={12} sm={6}>
+            <p style={{ textAlign: "right" }}>©2023 — STAYGOLDSTUDIOS</p>
           </Grid>
         </Grid>
       </div>

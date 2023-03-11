@@ -101,12 +101,16 @@ const SliderSectionDiv = styled.div`
         }
       }
     }
+
+    @media screen and (max-width: 900px) {
+      height: 50vw;
+    }
   }
 `;
 
 const SliderSection = () => {
   const sliderTopMiniTxtArr = [
-    "YORKDALE",
+    "Los angeles",
     "EATON CENTRE",
     "SQUARE ONE",
     "RIDEAU CENTRE",
@@ -116,16 +120,6 @@ const SliderSection = () => {
     <SliderSectionDiv>
       <div className="container_">
         <div className="top-div">
-          <Box
-            sx={{
-              display: "flex",
-            }}
-          >
-            <div>
-              <h4>DISCOVER OUR STORES</h4>
-            </div>
-          </Box>
-
           <Box
             sx={{
               display: {
@@ -160,11 +154,7 @@ const SliderSection = () => {
               sx={{
                 display: "flex",
               }}
-            >
-              <Link href="#" className="dynamic-bracket fix-brackets">
-                View Stores
-              </Link>
-            </Box>
+            ></Box>
           </div>
         </div>
 
@@ -173,16 +163,16 @@ const SliderSection = () => {
             <SwiperSlide>
               <div className="sub-swiper-container">
                 <Image
-                  src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1200/https://f.shgcdn.com/1a91ecc8-343f-42ad-9117-8618094c5b1a/"
+                  src="/img/footerSlider/01footerSliderImg.jpg"
                   alt="swiper-img"
                   width={1200}
                   height={1200}
                 />
 
                 <div>
-                  <p>3401 Dufferin Street</p>
-                  <p>Toronto, ON M6A 2T9</p>
-                  <p>Canada</p>
+                  <p>Galleria</p>
+                  <p>Los angeles, California</p>
+                  <p>USA</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -190,16 +180,16 @@ const SliderSection = () => {
             <SwiperSlide>
               <div className="sub-swiper-container">
                 <Image
-                  src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1200/https://f.shgcdn.com/6f359136-6715-4efe-9487-6e97f0cb7329/"
+                  src="/img/footerSlider/02footerSliderImg.jpg"
                   alt="swiper-img"
                   width={1200}
                   height={1200}
                 />
 
                 <div>
-                  <p>220 Yonge St</p>
-                  <p>Toronto, ON M6A 2T9</p>
-                  <p>Canada</p>
+                  <p>Galleria</p>
+                  <p>Los angeles, California</p>
+                  <p>USA</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -207,33 +197,16 @@ const SliderSection = () => {
             <SwiperSlide>
               <div className="sub-swiper-container">
                 <Image
-                  src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1200/https://f.shgcdn.com/c0ff8eac-e5c1-444d-8f79-2962c77e02a7/"
+                  src="/img/footerSlider/03footerSliderImg.jpg"
                   alt="swiper-img"
                   width={1200}
                   height={1200}
                 />
 
                 <div>
-                  <p>100 City Centre Drive</p>
-                  <p>Toronto, ON M6A 2T9</p>
-                  <p>Canada</p>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="sub-swiper-container">
-                <Image
-                  src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1200/https://f.shgcdn.com/13e92e40-82de-4204-a5a7-3a4df96aeabc/"
-                  alt="swiper-img"
-                  width={1200}
-                  height={1200}
-                />
-
-                <div>
-                  <p>50 Rideau St</p>
-                  <p>Toronto, ON M6A 2T9</p>
-                  <p>Canada</p>
+                  <p>Desert</p>
+                  <p>Los angeles, California</p>
+                  <p>USA</p>
                 </div>
               </div>
             </SwiperSlide>

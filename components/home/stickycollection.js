@@ -60,18 +60,15 @@ const StickyCollectionDiv = styled.div`
     }
 
     .absolute-link-1 {
-      top: 160px;
+      top: 50%;
       left: 56px;
+
+      transform: translate(0%, -50%);
     }
 
     .absolute-link-2 {
       top: 278px;
       right: 10px;
-    }
-
-    .absolute-link-3 {
-      bottom: 190px;
-      left: 75px;
     }
   }
 `;
@@ -113,113 +110,16 @@ const StickyCollection = () => {
                   item
                   xs={12}
                   style={{
-                    position: "sticky",
-                    top: 0,
-                    left: 0,
-                    paddingBottom: "134px",
-                    paddingTop: "60px",
-                  }}
-                >
-                  <Grid container spacing={1.3}>
-                    <Grid item xs={3} xl={2}>
-                      <MiniImgContainer>
-                        <Image
-                          src={
-                            "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/69fb71b5-88d5-45cb-9006-9cf4221616a4/"
-                          }
-                          alt="img-alt"
-                          width={1200}
-                          height={1200}
-                        />
-                        <p>OVO® ESSENTIALS POLO</p>
-                        <p>৳100</p>
-                      </MiniImgContainer>
-                    </Grid>
-
-                    <Grid item xs={3} xl={2}>
-                      <MiniImgContainer>
-                        <Image
-                          src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2e6a00a6-2380-46a8-9cf7-ddfce847bf00/"
-                          alt="img-alt"
-                          width={1200}
-                          height={1200}
-                        />
-                        <p>OVO® ESSENTIALS POLO</p>
-                        <p>৳100</p>
-                      </MiniImgContainer>
-                    </Grid>
-                    <Grid item xs={3} xl={2}>
-                      <MiniImgContainer>
-                        <Image
-                          src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/dc05670d-b779-40e7-8c80-f7e76d7ac1a6/"
-                          alt="img-alt"
-                          width={1200}
-                          height={1200}
-                        />
-                        <p>OVO® ESSENTIALS SWEATPANT</p>
-                        <p>৳100</p>
-                      </MiniImgContainer>
-                    </Grid>
-
-                    <Grid item xs={3} xl={2}>
-                      <MiniImgContainer>
-                        <Image
-                          src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/1eab89f7-0c7d-418b-b408-107800b34dcb/"
-                          alt="img-alt"
-                          width={1200}
-                          height={1200}
-                        />
-                        <p>OVO® ESSENTIALS SWEATPANT</p>
-                        <p>৳100</p>
-                      </MiniImgContainer>
-                    </Grid>
-                    <Grid item xs={3} xl={2}>
-                      <MiniImgContainer>
-                        <Image
-                          src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/6ec143c8-9d69-4465-978f-66828a080549/"
-                          alt="img-alt"
-                          width={1200}
-                          height={1200}
-                        />
-                        <p>OVO® ESSENTIALS SPORTCAP</p>
-                        <p>৳100</p>
-                      </MiniImgContainer>
-                    </Grid>
-
-                    <Grid item xs={3} xl={2}>
-                      <MiniImgContainer>
-                        <Image
-                          src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/d4db2db6-63bf-454a-96a2-0729d2758086/"
-                          alt="img-alt"
-                          width={1200}
-                          height={1200}
-                        />
-                        <p>OVO® ESSENTIALS SPORTCAP</p>
-                        <p>৳100</p>
-                      </MiniImgContainer>
-                    </Grid>
-                  </Grid>
-                </Grid>
-
-                <Grid
-                  item
-                  xs={12}
-                  style={{
                     alignSelf: "flex-end",
                   }}
                 >
                   <Grid container spacing={2}>
                     <Grid item xs={5.6}>
-                      <h3>OVO® ESSENTIALS</h3>
-
+                      <h3>24KFOREVER</h3>
                       <p>
-                        “FUNCTIONAL ENOUGH FOR ALL-SEASON WEAR, VERSATILE ENOUGH
-                        FOR EVERY OCCASION.” ©2023 — OCTOBER’S VERY OWN
+                        “NATURES FIRST GREEN IS GOLD” ©2023 — STAYGOLDSTUDIOS
                       </p>
                       <p></p>
-                      <p className="dynamic-bracket view-collection-link">
-                        VIEW COLLECTION
-                      </p>
                     </Grid>
 
                     <Grid item xs={6.4}></Grid>
@@ -230,128 +130,6 @@ const StickyCollection = () => {
 
             <Grid item xs={6}>
               <RightImg />
-            </Grid>
-          </Grid>
-        </div>
-      </Box>
-
-      <Box
-        sx={{
-          display: {
-            xs: "inherit",
-            sm: "inherit",
-            md: "none",
-          },
-        }}
-      >
-        <div className="grid-container">
-          <Grid container spacing={1.3}>
-            <Grid item xs={12}>
-              <h3>OVO® ESSENTIALS</h3>
-
-              <p>
-                “FUNCTIONAL ENOUGH FOR ALL-SEASON WEAR, VERSATILE ENOUGH FOR
-                EVERY OCCASION.” ©2023 — OCTOBER’S VERY OWN
-              </p>
-              <p></p>
-              <p className="dynamic-bracket view-collection-link">
-                VIEW COLLECTION
-              </p>
-            </Grid>
-
-            <Grid item xs={12}>
-              <Grid container spacing={1.3}>
-                <Grid item xs={12}>
-                  <RightImg />
-                </Grid>
-
-                <Grid item xs={6}>
-                  <Image
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                    }}
-                    src={
-                      "https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/69fb71b5-88d5-45cb-9006-9cf4221616a4/"
-                    }
-                    alt="img-alt"
-                    width={1200}
-                    height={1200}
-                  />
-                  <p>OVO® ESSENTIALS POLO</p>
-                  <p>৳100</p>
-                </Grid>
-                <Grid item xs={6}>
-                  <Image
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                    }}
-                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/2e6a00a6-2380-46a8-9cf7-ddfce847bf00/"
-                    alt="img-alt"
-                    width={1200}
-                    height={1200}
-                  />
-                  <p>OVO® ESSENTIALS POLO</p>
-                  <p>৳100</p>
-                </Grid>
-                <Grid item xs={6}>
-                  <Image
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                    }}
-                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/dc05670d-b779-40e7-8c80-f7e76d7ac1a6/"
-                    alt="img-alt"
-                    width={1200}
-                    height={1200}
-                  />
-                  <p>OVO® ESSENTIALS SWEATPANT</p>
-                  <p>৳100</p>
-                </Grid>
-                <Grid item xs={6}>
-                  <Image
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                    }}
-                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/1eab89f7-0c7d-418b-b408-107800b34dcb/"
-                    alt="img-alt"
-                    width={1200}
-                    height={1200}
-                  />
-                  <p>OVO® ESSENTIALS SWEATPANT</p>
-                  <p>৳100</p>
-                </Grid>
-                <Grid item xs={6}>
-                  <Image
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                    }}
-                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/6ec143c8-9d69-4465-978f-66828a080549/"
-                    alt="img-alt"
-                    width={1200}
-                    height={1200}
-                  />
-                  <p>OVO® ESSENTIALS SPORTCAP</p>
-                  <p>৳100</p>
-                </Grid>
-                <Grid item xs={6}>
-                  <Image
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                    }}
-                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/d4db2db6-63bf-454a-96a2-0729d2758086/"
-                    alt="img-alt"
-                    width={1200}
-                    height={1200}
-                  />
-                  <p>OVO® ESSENTIALS SPORTCAP</p>
-                  <p>৳100</p>
-                </Grid>
-              </Grid>
             </Grid>
           </Grid>
         </div>
@@ -375,16 +153,20 @@ function RightImg() {
         height={1200}
       />
 
-      <Link href="#" className="absolute-links absolute-link-1">
-        {"[1]"} OVO® ESSENTIALS SPORTCAP
+      <Link
+        href="#"
+        className="absolute-links absolute-link-1"
+        style={{ textTransform: "uppercase" }}
+      >
+        {"[1]"} classic mafia long sleave
       </Link>
 
-      <Link href="#" className="absolute-links absolute-link-2">
-        {"[2]"} OVO® ESSENTIALS POLO
-      </Link>
-
-      <Link href="#" className="absolute-links absolute-link-3">
-        {"[3]"} OVO® ESSENTIALS SWEATPANT
+      <Link
+        href="#"
+        className="absolute-links absolute-link-2"
+        style={{ textTransform: "uppercase" }}
+      >
+        {"[2]"} classic 24k long sleave
       </Link>
     </div>
   );

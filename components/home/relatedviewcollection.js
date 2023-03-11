@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import PrintOneImgBox from "../../components/collections/PrintOneImgBox";
+import PrintOneImgBox from "../collections/PrintOneImgBox";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import { useEffect, useState } from "react";
@@ -85,7 +85,7 @@ const RelatedViewCollection = () => {
 
   useEffect(() => {
     (async () => {
-      let res = await fetch("/api/collections/data");
+      let res = await fetch("/api/home/bottomData");
       let data = await res.json();
 
       setImgDataArr(data);
