@@ -4,7 +4,7 @@ import { Grid } from "@mui/material";
 const FooterDiv = styled.div`
   width: 100%;
   border-top: 1px solid #ededed;
-  padding-bottom: 50px;
+  padding-bottom: 120px;
   margin-top: 50px;
 
   .dynamic-bracket {
@@ -67,7 +67,7 @@ const footer = () => {
     <FooterDiv>
       <div className="contact-container">
         <Grid container spacing={1.3}>
-          <Grid item xs={12} sm={4} md={3}>
+          <Grid item xs={6} sm={4} md={3}>
             <ul className="normal-contact">
               <li>
                 <a href="#" className="dynamic-bracket">
@@ -101,7 +101,7 @@ const footer = () => {
               </li>
             </ul>
           </Grid>
-          <Grid item xs={12} sm={4} md={3}>
+          <Grid item xs={6} sm={4} md={3}>
             <ul className="media-contact">
               <li>
                 <a href="#" className="dynamic-bracket">

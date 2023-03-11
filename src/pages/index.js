@@ -7,6 +7,7 @@ import ViewCollection from "./viewcollection";
 import StickyCollection from "./stickycollection";
 import RelatedViewCollection from "./relatedviewcollection";
 import AfterHeader from "./afterheader";
+import SliderSection from "./slidersection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function Home() {
       <ViewCollection />
       <StickyCollection />
       <RelatedViewCollection />
+      <SliderSection />
       <Footer />
       <CookieFooter />
     </>
