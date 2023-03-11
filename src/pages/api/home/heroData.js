@@ -2,7 +2,7 @@ let data = [
   {
     onLoadImg: "/img/heroHover/heroimg01.jpg",
     onHoverImg: "/img/heroHover/hoverHeroimg01.jpg",
-    onLoadTitle: "OCTOBER'S VERY OWN CLASSIC COLLECTION",
+    onLoadTitle: "24k classic collection",
     onLoadSubTitles: "",
     hoverSubTitles: [""],
   },

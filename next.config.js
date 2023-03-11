@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     domains: ["res.cloudinary.com", "f.shgcdn.com"],
   },
+  distDir: "build",
 };
 
 module.exports = nextConfig;

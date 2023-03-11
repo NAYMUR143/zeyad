@@ -3,6 +3,7 @@ import PrintOneImgBox from "../collections/PrintOneImgBox";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const CatalogContentDivForViewCollection = styled.div`
   width: 100%;
@@ -132,9 +133,11 @@ const ViewCollection = () => {
               if (i < 12) {
                 return (
                   <Grid item sm={6} md={3} key={i}>
-                    <div className="single-img-container">
-                      <PrintOneImgBox obj={obj} />
-                    </div>
+                    <Link href={`/customize/${obj.customize}`}>
+                      <div className="single-img-container">
+                        <PrintOneImgBox obj={obj} />
+                      </div>
+                    </Link>
                   </Grid>
                 );
               }

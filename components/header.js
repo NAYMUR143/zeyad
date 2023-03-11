@@ -1,8 +1,13 @@
+import * as React from "react";
 import styled from "@emotion/styled";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, Fragment, useState } from "react";
+import Drawer from "@mui/material/Drawer";
+import Divider from "@mui/material/Divider";
+import ListItem from "@mui/material/ListItem";
+import Button from "@mui/material/Button";
 
 const HeaderDiv = styled.div`
   position: fixed;
@@ -26,7 +31,8 @@ const HeaderDiv = styled.div`
       height: 100%;
     }
   }
-  a {
+  a,
+  p {
     position: relative;
     font-weight: 500;
     font-size: 0.75rem;
@@ -80,9 +86,38 @@ const HeaderDiv = styled.div`
     }
   }
 `;
+const DrawerContainer = styled.div`
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+
+  p {
+    position: relative;
+    font-weight: 500;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+`;
 
 const Header = () => {
   const router = useRouter();
+  const [state, setState] = useState({
+    top: false,
+    left: false,
+    bottom: false,
+    right: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
 
   useEffect(() => {
     let paddingTop_ = document.querySelector(".header-container").offsetHeight;
@@ -91,32 +126,48 @@ const Header = () => {
 
   return (
     <HeaderDiv>
-      <div className="header-container">
-        <div className="catalog-container">
-          <Link href="/collections/all">24k catalog</Link>
-        </div>
+      <>
+        <div className="header-container">
+          <div className="catalog-container">
+            <Link href="/collections/all">24k catalog</Link>
+          </div>
 
-        <div
-          className="logo"
-          onClick={() => {
-            router.push("/");
-          }}
-        >
-          <img src="/img/logo.png" alt="main-logo" />
-        </div>
-
-        <div className="catalog-container">
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
+          <div
+            className="logo"
+            onClick={() => {
+              router.push("/");
             }}
-            className="dynamic-bracket"
           >
-            BAG
-          </a>
+            <img src="/img/logo.png" alt="main-logo" />
+          </div>
+
+          <div className="catalog-container">
+            {["right"].map((anchor) => (
+              <Fragment key={anchor}>
+                <p
+                  href="#"
+                  className="dynamic-bracket"
+                  onClick={toggleDrawer(anchor, true)}
+                >
+                  BAG
+                </p>
+                <Drawer
+                  anchor={anchor}
+                  open={state[anchor]}
+                  onClose={toggleDrawer(anchor, false)}
+                >
+                  <DrawerContainer>
+                    <ListItem>
+                      <p>BAG</p>
+                    </ListItem>
+                    <Divider></Divider>
+                  </DrawerContainer>
+                </Drawer>
+              </Fragment>
+            ))}
+          </div>
         </div>
-      </div>
+      </>
     </HeaderDiv>
   );
 };
