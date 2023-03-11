@@ -1,18 +1,14 @@
 import styled from "@emotion/styled";
-import PrintOneImgBox from "./collections/all/PrintOneImgBox";
-import { data } from "./data";
+import PrintOneImgBox from "../../components/collections/PrintOneImgBox";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
+import { useEffect, useState } from "react";
 
-const CatalogContentDivForViewCollectionRelated = styled.div`
+const CatalogContentDivForViewCollection = styled.div`
   width: 100%;
 
-  .view-collection-txt-related {
-    color: #c4c4c4;
-
-    span {
-      margin-right: 10px;
-    }
+  .view-collection-txt {
+    text-align: right;
   }
 
   h4 {
@@ -54,8 +50,7 @@ const CatalogContentDivForViewCollectionRelated = styled.div`
   }
 
   .top-div {
-    margin-top: 120px;
-    padding: 20px 10px 10px 10px;
+    padding: 20px 10px 0px 10px;
     display: flex;
     justify-content: space-between;
   }
@@ -80,11 +75,20 @@ const CatalogContentDivForViewCollectionRelated = styled.div`
   }
 `;
 
-const RelatedViewCollection = () => {
-  let imgDataArr = data();
+const ViewCollection = () => {
+  let [imgDataArr, setImgDataArr] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      let res = await fetch("/api/collections/data");
+      let data = await res.json();
+
+      setImgDataArr(data);
+    })();
+  }, []);
 
   return (
-    <CatalogContentDivForViewCollectionRelated>
+    <CatalogContentDivForViewCollection>
       <div className="top-div">
         <Grid
           container
@@ -95,7 +99,7 @@ const RelatedViewCollection = () => {
         >
           <Grid item xs={3}>
             <div>
-              <h4>RELATED ITEMS</h4>
+              <h4>OVO® 2023</h4>
             </div>
           </Grid>
           <Grid item xs={3}>
@@ -108,29 +112,16 @@ const RelatedViewCollection = () => {
               }}
             >
               <div>
-                <h4>OVO® 2023</h4>
+                <h4>NEW ARRIVALS</h4>
               </div>
             </Box>
           </Grid>
-          <Grid item xs={3}>
-            <div></div>
-          </Grid>
-          <Grid item xs={3}>
-            <Box
-              sx={{
-                display: {
-                  sm: "none",
-                  md: "inherit",
-                },
-              }}
-            >
-              <div>
-                <h4 className="view-collection-txt-related">
-                  <span>PREV</span>
-                  <span>NEXT</span>
-                </h4>
-              </div>
-            </Box>
+          <Grid item xs={6}>
+            <div>
+              <h4 className="view-collection-txt">
+                <span className="dynamic-bracket">VIEW COLLECTION</span>
+              </h4>
+            </div>
           </Grid>
         </Grid>
       </div>
@@ -140,24 +131,25 @@ const RelatedViewCollection = () => {
           container
           spacing={1.3}
           style={{
-            padding: "0 10px",
+            padding: "10px",
           }}
         >
-          {imgDataArr.map((obj, i) => {
-            if (i < 4) {
-              return (
-                <Grid item sm={6} md={3} key={i}>
-                  <div className="single-img-container">
-                    <PrintOneImgBox obj={obj} />
-                  </div>
-                </Grid>
-              );
-            }
-          })}
+          {imgDataArr &&
+            imgDataArr.map((obj, i) => {
+              if (i < 12) {
+                return (
+                  <Grid item sm={6} md={3} key={i}>
+                    <div className="single-img-container">
+                      <PrintOneImgBox obj={obj} />
+                    </div>
+                  </Grid>
+                );
+              }
+            })}
         </Grid>
       </div>
-    </CatalogContentDivForViewCollectionRelated>
+    </CatalogContentDivForViewCollection>
   );
 };
 
-export default RelatedViewCollection;
+export default ViewCollection;

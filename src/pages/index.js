@@ -1,13 +1,13 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Header from "./header";
-import Footer from "./footer";
-import CookieFooter from "./cookiefooter";
-import ViewCollection from "./viewcollection";
-import StickyCollection from "./stickycollection";
-import RelatedViewCollection from "./relatedviewcollection";
-import AfterHeader from "./afterheader";
-import SliderSection from "./slidersection";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+import CookieFooter from "../../components/cookiefooter";
+import ViewCollection from "../../components/home/viewcollection";
+import StickyCollection from "../../components/home/stickycollection";
+import RelatedViewCollection from "../../components/home/relatedviewcollection";
+import AfterHeader from "../../components/home/afterheader";
+import SliderSection from "../../components/home/slidersection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,15 +22,15 @@ export default function Home() {
       </Head>
       <main className={inter.className}>
         <Header />
-      </main>
 
-      <AfterHeader />
-      <ViewCollection />
-      <StickyCollection />
-      <RelatedViewCollection />
-      <SliderSection />
-      <Footer />
-      <CookieFooter />
+        <AfterHeader />
+        <ViewCollection />
+        <StickyCollection />
+        <RelatedViewCollection />
+        <SliderSection />
+        <Footer />
+        <CookieFooter />
+      </main>
     </>
   );
 }

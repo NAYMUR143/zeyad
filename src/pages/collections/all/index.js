@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
-import Header from "@/pages/header";
-import Footer from "@/pages/footer";
-import CatalogContent from "./CatalogContent";
-import CookieFooter from "@/pages/cookiefooter";
+import Header from "../../../../components/header";
+import Footer from "../../../../components/footer";
+import CatalogContent from "../../../../components/collections/CatalogContent";
+import CookieFooter from "../../../../components/cookiefooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
