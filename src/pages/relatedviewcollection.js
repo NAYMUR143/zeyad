@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import PrintOneImgBox from "./collections/all/PrintOneImgBox";
-import { data } from "./data";
+import { homebottomdata } from "./homebottomdata";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 
@@ -81,7 +81,7 @@ const CatalogContentDivForViewCollectionRelated = styled.div`
 `;
 
 const RelatedViewCollection = () => {
-  let imgDataArr = data();
+  let imgDataArr = homebottomdata();
 
   return (
     <CatalogContentDivForViewCollectionRelated>

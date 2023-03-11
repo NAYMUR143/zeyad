@@ -106,7 +106,7 @@ const SliderSectionDiv = styled.div`
 
 const SliderSection = () => {
   const sliderTopMiniTxtArr = [
-    "YORKDALE",
+    "Los angeles",
     "EATON CENTRE",
     "SQUARE ONE",
     "RIDEAU CENTRE",
@@ -116,16 +116,6 @@ const SliderSection = () => {
     <SliderSectionDiv>
       <div className="container_">
         <div className="top-div">
-          <Box
-            sx={{
-              display: "flex",
-            }}
-          >
-            <div>
-              <h4>DISCOVER OUR STORES</h4>
-            </div>
-          </Box>
-
           <Box
             sx={{
               display: {
@@ -160,11 +150,7 @@ const SliderSection = () => {
               sx={{
                 display: "flex",
               }}
-            >
-              <Link href="#" className="dynamic-bracket fix-brackets">
-                View Stores
-              </Link>
-            </Box>
+            ></Box>
           </div>
         </div>
 
@@ -180,9 +166,9 @@ const SliderSection = () => {
                 />
 
                 <div>
-                  <p>3401 Dufferin Street</p>
-                  <p>Toronto, ON M6A 2T9</p>
-                  <p>Canada</p>
+                  <p>Galleria</p>
+                  <p>Los angeles, California</p>
+                  <p>USA</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -197,9 +183,9 @@ const SliderSection = () => {
                 />
 
                 <div>
-                  <p>220 Yonge St</p>
-                  <p>Toronto, ON M6A 2T9</p>
-                  <p>Canada</p>
+                  <p>Galleria</p>
+                  <p>Los angeles, California</p>
+                  <p>USA</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -214,26 +200,9 @@ const SliderSection = () => {
                 />
 
                 <div>
-                  <p>100 City Centre Drive</p>
-                  <p>Toronto, ON M6A 2T9</p>
-                  <p>Canada</p>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="sub-swiper-container">
-                <Image
-                  src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1200/https://f.shgcdn.com/13e92e40-82de-4204-a5a7-3a4df96aeabc/"
-                  alt="swiper-img"
-                  width={1200}
-                  height={1200}
-                />
-
-                <div>
-                  <p>50 Rideau St</p>
-                  <p>Toronto, ON M6A 2T9</p>
-                  <p>Canada</p>
+                  <p>Desert</p>
+                  <p>Los angeles, California</p>
+                  <p>USA</p>
                 </div>
               </div>
             </SwiperSlide>

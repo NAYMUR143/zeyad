@@ -2,7 +2,8 @@ import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
-
+import heroimg1 from "../../components/images/heroimg01.JPG";
+import heroimg2 from "../../components/images/heroimg02.JPG";
 const AfterHeaderDiv = styled.div`
   width: 100%;
 
@@ -70,7 +71,7 @@ const AfterHeader = () => {
               <picture>
                 <Image
                   style={{ width: "auto", maxHeight: "70vh" }}
-                  src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1920/https://f.shgcdn.com/58a6a6ab-0318-485a-86ac-4f90131d1ce2/"
+                  src={heroimg1}
                   alt="img"
                   width={1200}
                   height={1200}
@@ -92,7 +93,7 @@ const AfterHeader = () => {
               <picture>
                 <Image
                   style={{ width: "100%", height: "auto" }}
-                  src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1920/https://f.shgcdn.com/58a6a6ab-0318-485a-86ac-4f90131d1ce2/"
+                  src={heroimg1}
                   alt="img"
                   width={1200}
                   height={1200}
@@ -108,7 +109,7 @@ const AfterHeader = () => {
           <Grid item xs={12}></Grid>
 
           <Grid item xs={12}>
-            <p className="dynamic-bracket">LONDON (40ºF)</p>
+            <p className="dynamic-bracket">Atlanta (24ºc)</p>
           </Grid>
 
           <Grid item xs={12}></Grid>

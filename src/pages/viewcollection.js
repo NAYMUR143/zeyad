@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import PrintOneImgBox from "./collections/all/PrintOneImgBox";
-import { data } from "./data";
+import { homepagedata } from "./homepagedata";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 
@@ -76,7 +76,7 @@ const CatalogContentDivForViewCollection = styled.div`
 `;
 
 const ViewCollection = () => {
-  let imgDataArr = data();
+  let imgDataArr = homepagedata();
 
   return (
     <CatalogContentDivForViewCollection>
@@ -90,7 +90,7 @@ const ViewCollection = () => {
         >
           <Grid item xs={3}>
             <div>
-              <h4>OVO® 2023</h4>
+              <h4>24k 2023</h4>
             </div>
           </Grid>
           <Grid item xs={3}>
@@ -106,13 +106,6 @@ const ViewCollection = () => {
                 <h4>NEW ARRIVALS</h4>
               </div>
             </Box>
-          </Grid>
-          <Grid item xs={6}>
-            <div>
-              <h4 className="view-collection-txt">
-                <span className="dynamic-bracket">VIEW COLLECTION</span>
-              </h4>
-            </div>
           </Grid>
         </Grid>
       </div>

@@ -1,8 +1,9 @@
 import styled from "@emotion/styled";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-
+import logo from "../../components/images/logo.png";
 const HeaderDiv = styled.div`
   position: fixed;
   top: 0;
@@ -16,7 +17,15 @@ const HeaderDiv = styled.div`
   justify-content: center;
 
   border-bottom: 1px solid #ededed;
-
+  .logo {
+    width: 100px;
+    height: 50px;
+    img {
+      width: 100%;
+      object-fit: contain;
+      height: 100%;
+    }
+  }
   a {
     position: relative;
     font-weight: 500;
@@ -66,17 +75,16 @@ const Header = () => {
     <HeaderDiv>
       <div className="header-container">
         <div className="catalog-container">
-          <Link href="/collections/all">catalog</Link>
+          <Link href="/collections/all">24k catalog</Link>
         </div>
 
-        <div>
-          <img
-            onClick={() => {
-              router.push("/");
-            }}
-            src="/img/svg/owl.svg"
-            alt="main-logo"
-          />
+        <div
+          className="logo"
+          onClick={() => {
+            router.push("/");
+          }}
+        >
+          <Image src={logo} alt="main-logo" />
         </div>
       </div>
     </HeaderDiv>
