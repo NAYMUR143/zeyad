@@ -31,9 +31,3 @@ a {
   font-size: 0.76rem;
   color: #bbb;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}

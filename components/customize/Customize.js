@@ -68,7 +68,7 @@ const Customize = ({ itm }) => {
     <CustomizeDiv>
       <div className="dynami-img">
         <Grid container spacing={1.3} style={{ position: "relative" }}>
-          <Grid item xs={6}>
+          <Grid item xl={7.5} md={6}>
             <Grid container spacing={1.3}>
               {dtImgArr.map((imgObj, i) => (
                 <Grid item xs={6} key={i}>
@@ -78,7 +78,7 @@ const Customize = ({ itm }) => {
             </Grid>
           </Grid>
 
-          <Grid item xs={6}>
+          <Grid item xl={4.5} md={6}>
             <Grid
               container
               spacing={1.3}
@@ -160,20 +160,7 @@ const Customize = ({ itm }) => {
                       }}
                     ></div>
                   </Grid>
-
-                  <Grid item xs={1.5}></Grid>
-                  <Grid item xs={1.5}></Grid>
-                  <Grid item xs={1.5}></Grid>
-                  <Grid item xs={1.5}></Grid>
-                  <Grid item xs={1.5}></Grid>
                 </Grid>
-              </Grid>
-
-              <Grid item xs={12}>
-                <p className="dynamic-bracket gray-clr">DETAILS & CARE</p>
-                <p className="dynamic-bracket gray-clr">FIND A STORE</p>
-                <p className="dynamic-bracket gray-clr">SIZE & FIT</p>
-                <p className="dynamic-bracket gray-clr">LIVE CHAT</p>
               </Grid>
             </Grid>
           </Grid>
