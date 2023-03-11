@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
+import Link from "next/link";
 
 const StickyCollectionDiv = styled.div`
   width: 100%;
@@ -42,6 +43,35 @@ const StickyCollectionDiv = styled.div`
     :hover::after {
       position: absolute;
       content: "]";
+    }
+  }
+
+  .right-large-img-container {
+    position: relative;
+    height: 100%;
+
+    .absolute-links {
+      position: absolute;
+
+      font-size: 0.75rem;
+      font-weight: 500;
+      background-color: #fff;
+      padding: 2px;
+    }
+
+    .absolute-link-1 {
+      top: 160px;
+      left: 56px;
+    }
+
+    .absolute-link-2 {
+      top: 278px;
+      right: 10px;
+    }
+
+    .absolute-link-3 {
+      bottom: 190px;
+      left: 75px;
     }
   }
 `;
@@ -199,17 +229,7 @@ const StickyCollection = () => {
             </Grid>
 
             <Grid item xs={6}>
-              <Image
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  paddingTop: "50px",
-                }}
-                src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/de577ffd-90b1-498b-bede-1eb1528f9d91/"
-                alt="img-alt"
-                width={1200}
-                height={1200}
-              />
+              <RightImg />
             </Grid>
           </Grid>
         </div>
@@ -242,17 +262,7 @@ const StickyCollection = () => {
             <Grid item xs={12}>
               <Grid container spacing={1.3}>
                 <Grid item xs={12}>
-                  <Image
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                      paddingTop: "50px",
-                    }}
-                    src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/de577ffd-90b1-498b-bede-1eb1528f9d91/"
-                    alt="img-alt"
-                    width={1200}
-                    height={1200}
-                  />
+                  <RightImg />
                 </Grid>
 
                 <Grid item xs={6}>
@@ -349,5 +359,35 @@ const StickyCollection = () => {
     </StickyCollectionDiv>
   );
 };
+
+function RightImg() {
+  return (
+    <div className="right-large-img-container">
+      <Image
+        style={{
+          width: "100%",
+          height: "auto",
+          paddingTop: "50px",
+        }}
+        src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/de577ffd-90b1-498b-bede-1eb1528f9d91/"
+        alt="img-alt"
+        width={1200}
+        height={1200}
+      />
+
+      <Link href="#" className="absolute-links absolute-link-1">
+        {"[1]"} OVO® ESSENTIALS SPORTCAP
+      </Link>
+
+      <Link href="#" className="absolute-links absolute-link-2">
+        {"[2]"} OVO® ESSENTIALS POLO
+      </Link>
+
+      <Link href="#" className="absolute-links absolute-link-3">
+        {"[3]"} OVO® ESSENTIALS SWEATPANT
+      </Link>
+    </div>
+  );
+}
 
 export default StickyCollection;
