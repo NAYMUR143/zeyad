@@ -1,14 +1,25 @@
 import styled from "@emotion/styled";
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import { textAlign } from "@mui/system";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+// import required modules
+import { Pagination } from "swiper";
 
 const CustomizeDiv = styled.div`
   position: relative;
   width: 100%;
 
+  .mySwiper {
+    width: 100%;
+    height: 70vh;
+  }
+
   img {
     width: 100%;
+    height: 100%;
+
+    object-fit: cover;
   }
 
   p,
@@ -68,17 +79,56 @@ const Customize = ({ itm }) => {
     <CustomizeDiv>
       <div className="dynami-img">
         <Grid container spacing={1.3} style={{ position: "relative" }}>
-          <Grid item xs={6}>
-            <Grid container spacing={1.3}>
-              {dtImgArr.map((imgObj, i) => (
-                <Grid item xs={6} key={i}>
-                  <img src={imgObj.src} alt="img" />
-                </Grid>
-              ))}
-            </Grid>
+          <Grid item xs={12} sm={12} md={6}>
+            <Box
+              sx={{
+                display: {
+                  xs: "none",
+                  sm: "inherit",
+                },
+              }}
+            >
+              <Grid container spacing={1.3}>
+                {dtImgArr.map((imgObj, i) => (
+                  <Grid item xs={6} key={i}>
+                    <img src={imgObj.src} alt="img" />
+                  </Grid>
+                ))}
+              </Grid>
+            </Box>
+
+            <Box
+              sx={{
+                display: {
+                  xs: "inherit",
+                  sm: "none",
+                },
+              }}
+            >
+              <Swiper
+                slidesPerView={"auto"}
+                centeredSlides={true}
+                spaceBetween={30}
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+              >
+                {dtImgArr.map((imgObj, i) => (
+                  <SwiperSlide>
+                    <img
+                      src={imgObj.src}
+                      alt="img"
+                      style={{ width: "100%", height: "400px" }}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </Box>
           </Grid>
 
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={12} md={6}>
             <Grid
               container
               spacing={1.3}
@@ -90,15 +140,15 @@ const Customize = ({ itm }) => {
             >
               <Grid item xs={12} style={{ paddingTop: "70px" }}>
                 <Grid container spacing={1.3}>
-                  <Grid item xs={4}>
+                  <Grid item xs={12} sm={12} md={4}>
                     <p className="title-name">{name_}</p>
                   </Grid>
 
-                  <Grid item xs={4}>
+                  <Grid item xs={12} sm={12} md={4}>
                     <p className="title-price">{price_}</p>
                   </Grid>
 
-                  <Grid item xs={4}>
+                  <Grid item xs={12} sm={12} md={4}>
                     <p style={{ textAlign: "right" }}>
                       <span className="dynamic-bracket">ADD TO BAG</span>
                     </p>
@@ -106,27 +156,27 @@ const Customize = ({ itm }) => {
                 </Grid>
 
                 <Grid container spacing={1.3}>
-                  <Grid item xs={4}>
+                  <Grid item xs={12} sm={12} md={4}>
                     <p className="title-color">COLOUR</p>
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item xs={12} sm={12} md={4}>
                     <p className="title-color-arr">{colors_}</p>
                   </Grid>
-                  <Grid item xs={4}></Grid>
+                  <Grid item xs={12} sm={12} md={4}></Grid>
                 </Grid>
 
                 <Grid container spacing={1.3}>
-                  <Grid item xs={4}>
+                  <Grid item xs={12} sm={12} md={4}>
                     <p className="title-size-name">SIZE</p>
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item xs={12} sm={12} md={4}>
                     <ul className="title-size-arr">
                       {sizes_.map((sz, i) => (
                         <li key={i}>{sz}</li>
                       ))}
                     </ul>
                   </Grid>
-                  <Grid item xs={4}></Grid>
+                  <Grid item xs={12} sm={12} md={4}></Grid>
                 </Grid>
               </Grid>
 
@@ -160,20 +210,7 @@ const Customize = ({ itm }) => {
                       }}
                     ></div>
                   </Grid>
-
-                  <Grid item xs={1.5}></Grid>
-                  <Grid item xs={1.5}></Grid>
-                  <Grid item xs={1.5}></Grid>
-                  <Grid item xs={1.5}></Grid>
-                  <Grid item xs={1.5}></Grid>
                 </Grid>
-              </Grid>
-
-              <Grid item xs={12}>
-                <p className="dynamic-bracket gray-clr">DETAILS & CARE</p>
-                <p className="dynamic-bracket gray-clr">FIND A STORE</p>
-                <p className="dynamic-bracket gray-clr">SIZE & FIT</p>
-                <p className="dynamic-bracket gray-clr">LIVE CHAT</p>
               </Grid>
             </Grid>
           </Grid>

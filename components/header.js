@@ -8,6 +8,7 @@ import Drawer from "@mui/material/Drawer";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import Button from "@mui/material/Button";
+import { Grid } from "@mui/material";
 
 const HeaderDiv = styled.div`
   position: fixed;
@@ -96,6 +97,12 @@ const DrawerContainer = styled.div`
     font-weight: 500;
     font-size: 0.75rem;
     text-transform: uppercase;
+
+    margin: 16px 0;
+  }
+
+  img {
+    width: 100%;
   }
 `;
 
@@ -161,6 +168,28 @@ const Header = () => {
                       <p>BAG</p>
                     </ListItem>
                     <Divider></Divider>
+                    <ListItem>
+                      <p>YOUR CART IS EMPTY</p>
+                    </ListItem>
+                    <Divider></Divider>
+                    <ListItem>
+                      <Grid container spacing={1.3}>
+                        <Grid item xs={6}>
+                          <img
+                            src="/img/topProductImage/01Product_home.jpg"
+                            alt="img"
+                          />
+                          <p>Classic mafia tee</p>
+                        </Grid>
+                        <Grid item xs={6}>
+                          <img
+                            src="/img/bottomProductImage/04BottomProduct_home.jpg"
+                            alt="img"
+                          />
+                          <p>Classic mafia hoodie</p>
+                        </Grid>
+                      </Grid>
+                    </ListItem>
                   </DrawerContainer>
                 </Drawer>
               </Fragment>

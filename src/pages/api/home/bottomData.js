@@ -22,7 +22,7 @@ let data = [
   },
   {
     onLoadImg: "/img/bottomProductImage/04BottomProduct_home.jpg",
-    onLoadTitle: "Classic mafia hoodie ",
+    onLoadTitle: "Classic mafia hoodie",
     onLoadSubTitles: "$77.74",
     hoverSubTitles: ["s", "m", "l"],
     customize: "ClassicMafiaHoddie",

@@ -10,6 +10,11 @@ let ImgInfoContainer = styled.div`
     height: 300px;
 
     object-fit: cover;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   p,
