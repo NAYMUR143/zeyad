@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import ViewCollection from "../../components/home/viewCollection";
+import ViewCollection from "../../components/home/Viewcollection";
 import StickyCollection from "../../components/home/stickyCollection";
 import RelatedViewCollection from "../../components/home/relatedViewCollection";
 import AfterHeader from "../../components/home/afterHeader";
@@ -21,7 +21,6 @@ export default function Home() {
       </Head>
       <main className={inter.className}>
         <Header />
-
         <AfterHeader />
         <ViewCollection />
         <StickyCollection />

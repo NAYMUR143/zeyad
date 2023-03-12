@@ -136,7 +136,7 @@ const Header = () => {
       <>
         <div className="header-container">
           <div className="catalog-container">
-            <Link href="/collections/all">24k catalog</Link>
+            {/* <Link href="/collections/all">24k catalog</Link> */}
           </div>
 
           <div

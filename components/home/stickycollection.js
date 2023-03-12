@@ -67,8 +67,8 @@ const StickyCollectionDiv = styled.div`
     }
 
     .absolute-link-2 {
-      top: 278px;
-      right: 10px;
+      top: 518px;
+      right: 38px;
     }
   }
 `;
@@ -147,14 +147,14 @@ function RightImg() {
           height: "auto",
           paddingTop: "50px",
         }}
-        src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:eco,c_limit,w_1080/https://f.shgcdn.com/de577ffd-90b1-498b-bede-1eb1528f9d91/"
+        src="/img/bigImage.JPG"
         alt="img-alt"
         width={1200}
         height={1200}
       />
 
       <Link
-        href="#"
+        href="/product/ClassicMafiaLongSleave"
         className="absolute-links absolute-link-1"
         style={{ textTransform: "uppercase" }}
       >
@@ -162,7 +162,7 @@ function RightImg() {
       </Link>
 
       <Link
-        href="#"
+        href="/product/Classic24KLongSleave"
         className="absolute-links absolute-link-2"
         style={{ textTransform: "uppercase" }}
       >

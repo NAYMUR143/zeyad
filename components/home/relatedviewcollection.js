@@ -118,7 +118,7 @@ const RelatedViewCollection = () => {
               }}
             >
               <div>
-                <h4>OVO® 2023</h4>
+                <h4>24K 2023</h4>
               </div>
             </Box>
           </Grid>
